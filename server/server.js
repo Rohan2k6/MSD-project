@@ -72,3 +72,6 @@ process.on('unhandledRejection', (err, promise) => {
   server.close(() => process.exit(1));
 });
 
+app.get('/', (req, res) => {
+  res.send('✅ Backend server is running successfully!');
+});
